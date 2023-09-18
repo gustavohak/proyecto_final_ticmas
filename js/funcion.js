@@ -1,3 +1,9 @@
+window.addEventListener("load", function(event) {
+ refrescar();
+});
+
+
+
 function mostrardp() {
    let cadena='<ul class="list-group list-group-flush">'+
    '<li class="list-group-item active">Datos Personales</li>'+
@@ -50,16 +56,16 @@ let lista1 ='<ul class="list-group list-group-flush">'+
     '</ul>'+
     '<div class="row">'+
     '<div class="col-sm-1">'+ '</div>'+
-    '<div class="col-sm-9">'+
+    '<div class="col-sm-9">'+'<br>'+
     '<ul>'+
     '<li>Secundaria'+
       '<ul>'+
-        '<li>'+'Tecnico en electronica ' + 'E.N.E.T  N.Avellaneda ' + 'Duracion 4 años'+'</li>'+
+        '<li>'+'Tecnico en electronica ' + 'E.N.E.T   N.Avellaneda ' + 'Duracion 4 años'+'</li>'+
       '</ul>'+
     '</li>'+
     '<li>Terciario'+
       '<ul>'+
-        '<li>'+'Tecnico en Informatica ' + 'E.N.E.T D.Silva ' + 'Duracion 4 años'+'</li>'+
+        '<li>'+'Tecnico en Informatica ' + '  E.N.E.T D.Silva ' + 'Duracion 4 años'+'</li>'+
       '</ul>'+
     '</li>'+
     '<li>Universitario'+
@@ -78,7 +84,7 @@ function mostrarexp(){
       '</ul>'+
       '<div class="row">'+
       '<div class="col-sm-1">'+ '</div>'+
-          '<div class="col-sm-9">'+
+          '<div class="col-sm-9">'+ '<br>'+
             '<ul>'+
             '<li>Tecnico Independiente '+
               '<ul>'+
@@ -102,13 +108,14 @@ function mostrarcursos(){
     '</ul>'+
     '<div class="row">'+
     '<div class="col-sm-1">'+ '</div>'+
-        '<div class="col-sm-9">'+
+        '<div class="col-sm-9">'+ '<br>'+
           '<ul>'+
           '<li>Como Tecnico Independiente '+
             '<ul>'+
             '<li>'+' Autocad 2000 ' +
             '<li>'+' Empalme de Fibras Opticas y localizacion de fallas con OTDR '+ 'Año 2023'+ 
-              '</li>'+
+             '<li>' + 'curso teorico practico Quimica General  U.T.N Parana '+
+            '</li>'+
             '</ul>'+
           '</li>'+
           '<li>En Telecom Argentina. '+' Desde 2015 -2023'+
@@ -128,10 +135,10 @@ function mostrarcursos(){
   document.getElementById("dp").innerHTML=lista1;
 }
 function mostrarapt(){
- let a= "Motivada por la Electronica y las ciencias que dependen de ella estoy" + 
+ let a= "Motivada por la Electronica y las ciencias que dependen de ella estoy " + 
  "preparada para realizar tareas de mantenimiento de equipos electronicos."+ "<br>"+
  "Poseeo conocimientos de desarrollo de software y administracion de bases de datos"+ 
- " usando, java, c#, delphi,php y mysql, "+"adquiridos en las tecnicaturas realizadas "
+ " usando, java, c#, delphi,php y mysql, "+" adquiridos en las tecnicaturas realizadas "
  + "<br>"+ "Por el momento no he tenido oportunidad de trabajar en empresas del rubro pero en mis "+
  " tiempos libres trabajo como  desarrollador independiente";
   let lista1 ='<ul class="list-group list-group-flush">'+
@@ -145,4 +152,12 @@ function mostrarapt(){
     '</div>';
   
     document.getElementById("dp").innerHTML=lista1;
+}
+
+function refrescar(){
+  let a='<div class="row">'+
+    '<div class="col-sm-3">'+ '</div>'+
+    '<div class="col-sm-9">'+ '<br> <br>'+'<p> Click en la barra de la izquierda para recorrer </p> '+ '</div>' +
+'</div>';
+  document.getElementById("dp").innerHTML=a;  
 }

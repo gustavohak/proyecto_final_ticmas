@@ -4,21 +4,20 @@
   margin-left: 5px;
   margin-right: 5px;
    border: black 1px solid;
-  /**  background-color: #bbb */
-  
 }
+
 h1 {
     text-align: center;
   }
   
-  #i3 {
-    padding-top: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: black 1px solid;
-    background-color: #6c5997" 
-  }
+       /**     #i3 {
+              padding-top: 10px;
+              margin-top: 10px;
+              margin-left: 10px;
+              margin-right: 10px;
+              border: black 1px solid;
+              background-color: #6c5997" 
+            } */
   /** id lista centra a la izquierda el contenido a mostrar  de datos personales   */
   #lista{
     margin-left: 0px;
@@ -28,13 +27,21 @@ h1 {
     padding-left: 0px;
     padding-right: 0px;
   }
-   
+     /** define ancho de imagen de fotografia al 90% altura auto   */
     .img-fluid {
       max-width: 90%;
       height:auto;
      }
-
+          /** define color blanco en enlace a google   */
      a{
       color: white;
      }
-  
+       /** alinea texto de pie al centro y fuente pequena   */
+     .pie{
+    text-align: center;
+    font-size: x-small;
+     }
+       /** alinea el boton refrescar a la derecha   */
+  .bot_der{
+    text-align:right;
+  }
